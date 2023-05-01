@@ -1,7 +1,7 @@
 const newRandomNumberGenerator = (length, min, max, n, m) => {
     const result = [];
     for(let i=0; i < length; i++){
-        result.push(Math.floor(Math.random()) * (Math.abs(n-m)+1) + Math.min(n,m))
+        result.push(Math.floor(Math.random() * (Math.abs(n-m)+1)) + Math.min(n,m))
     }
     return result;
 }
